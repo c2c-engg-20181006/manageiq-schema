@@ -150,30 +150,7 @@ class ConfirmAllClassRenames < ActiveRecord::Migration[4.2]
     VmTelefonica                                          ManageIQ::Providers::Telefonica::CloudManager::Vm
     VmTelefonica::RemoteConsole                           ManageIQ::Providers::Telefonica::CloudManager::Vm::RemoteConsole
     ProviderTelefonica                                    ManageIQ::Providers::Telefonica::Provider
-    EmsOrange                                             ManageIQ::Providers::Orange::CloudManager
-    AvailabilityZoneOrange                                ManageIQ::Providers::Orange::CloudManager::AvailabilityZone
-    AvailabilityZoneOrangeNull                            ManageIQ::Providers::Orange::CloudManager::AvailabilityZoneNull
-    CloudResourceQuotaOrange                              ManageIQ::Providers::Orange::CloudManager::CloudResourceQuota
-    CloudTenantOrange                                     ManageIQ::Providers::Orange::CloudManager::CloudTenant
-    CloudVolumeOrange                                     ManageIQ::Providers::Orange::CloudManager::CloudVolume
-    CloudVolumeSnapshotOrange                             ManageIQ::Providers::Orange::CloudManager::CloudVolumeSnapshot
-    MiqEventCatcherOrange                                 ManageIQ::Providers::Orange::CloudManager::EventCatcher
-    FlavorOrange                                          ManageIQ::Providers::Orange::CloudManager::Flavor
-    FloatingIpOrange                                      ManageIQ::Providers::Orange::CloudManager::FloatingIp
-    MiqEmsMetricsCollectorWorkerOrange                    ManageIQ::Providers::Orange::CloudManager::MetricsCollectorWorker
-    ServiceOrchestration::OptionConverterOrange           ManageIQ::Providers::Orange::CloudManager::OrchestrationServiceOptionConverter
-    OrchestrationStackOrange                              ManageIQ::Providers::Orange::CloudManager::OrchestrationStack
-    MiqProvisionOrange                                    ManageIQ::Providers::Orange::CloudManager::Provision
-    MiqProvisionOrangeWorkflow                            ManageIQ::Providers::Orange::CloudManager::ProvisionWorkflow
-    EmsRefresh::Parsers::Orange                           ManageIQ::Providers::Orange::CloudManager::RefreshParser
-    MiqEmsRefreshWorkerOrange                             ManageIQ::Providers::Orange::CloudManager::RefreshWorker
-    EmsRefresh::Refreshers::OrangeRefresher               ManageIQ::Providers::Orange::CloudManager::Refresher
-    SecurityGroupOrange                                   ManageIQ::Providers::Orange::CloudManager::SecurityGroup
-    TemplateOrange                                        ManageIQ::Providers::Orange::CloudManager::Template
-    VmOrange                                              ManageIQ::Providers::Orange::CloudManager::Vm
-    VmOrange::RemoteConsole                               ManageIQ::Providers::Orange::CloudManager::Vm::RemoteConsole
-    ProviderOrange                                        ManageIQ::Providers::Orange::Provider
-  )]
+    )]
 
   def change
     rename_class_references(NAME_MAP)

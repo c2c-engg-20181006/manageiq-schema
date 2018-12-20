@@ -127,29 +127,29 @@ class ConfirmAllClassRenames < ActiveRecord::Migration[4.2]
     EmsRefresh::Refreshers::VcRefresher                   ManageIQ::Providers::Vmware::InfraManager::Refresher
     TemplateVmware                                        ManageIQ::Providers::Vmware::InfraManager::Template
     VmVmware                                              ManageIQ::Providers::Vmware::InfraManager::Vm
-    EmsTelefonica                                         ManageIQ::Providers::Telefonica::CloudManager
-    AvailabilityZoneTelefonica                            ManageIQ::Providers::Telefonica::CloudManager::AvailabilityZone
-    AvailabilityZoneTelefonicaNull                        ManageIQ::Providers::Telefonica::CloudManager::AvailabilityZoneNull
-    CloudResourceQuotaTelefonica                          ManageIQ::Providers::Telefonica::CloudManager::CloudResourceQuota
-    CloudTenantTelefonica                                 ManageIQ::Providers::Telefonica::CloudManager::CloudTenant
-    CloudVolumeTelefonica                                 ManageIQ::Providers::Telefonica::CloudManager::CloudVolume
-    CloudVolumeSnapshotTelefonica                         ManageIQ::Providers::Telefonica::CloudManager::CloudVolumeSnapshot
-    MiqEventCatcherTelefonica                             ManageIQ::Providers::Telefonica::CloudManager::EventCatcher
-    FlavorTelefonica                                      ManageIQ::Providers::Telefonica::CloudManager::Flavor
-    FloatingIpTelefonica                                  ManageIQ::Providers::Telefonica::CloudManager::FloatingIp
-    MiqEmsMetricsCollectorWorkerTelefonica                ManageIQ::Providers::Telefonica::CloudManager::MetricsCollectorWorker
-    ServiceOrchestration::OptionConverterTelefonica       ManageIQ::Providers::Telefonica::CloudManager::OrchestrationServiceOptionConverter
-    OrchestrationStackTelefonica                          ManageIQ::Providers::Telefonica::CloudManager::OrchestrationStack
-    MiqProvisionTelefonica                                ManageIQ::Providers::Telefonica::CloudManager::Provision
-    MiqProvisionTelefonicaWorkflow                        ManageIQ::Providers::Telefonica::CloudManager::ProvisionWorkflow
-    EmsRefresh::Parsers::Telefonica                       ManageIQ::Providers::Telefonica::CloudManager::RefreshParser
-    MiqEmsRefreshWorkerTelefonica                         ManageIQ::Providers::Telefonica::CloudManager::RefreshWorker
-    EmsRefresh::Refreshers::TelefonicaRefresher           ManageIQ::Providers::Telefonica::CloudManager::Refresher
-    SecurityGroupTelefonica                               ManageIQ::Providers::Telefonica::CloudManager::SecurityGroup
-    TemplateTelefonica                                    ManageIQ::Providers::Telefonica::CloudManager::Template
-    VmTelefonica                                          ManageIQ::Providers::Telefonica::CloudManager::Vm
-    VmTelefonica::RemoteConsole                           ManageIQ::Providers::Telefonica::CloudManager::Vm::RemoteConsole
-    ProviderTelefonica                                    ManageIQ::Providers::Telefonica::Provider
+    EmsOrange                                         ManageIQ::Providers::Orange::CloudManager
+    AvailabilityZoneOrange                            ManageIQ::Providers::Orange::CloudManager::AvailabilityZone
+    AvailabilityZoneOrangeNull                        ManageIQ::Providers::Orange::CloudManager::AvailabilityZoneNull
+    CloudResourceQuotaOrange                          ManageIQ::Providers::Orange::CloudManager::CloudResourceQuota
+    CloudTenantOrange                                 ManageIQ::Providers::Orange::CloudManager::CloudTenant
+    CloudVolumeOrange                                 ManageIQ::Providers::Orange::CloudManager::CloudVolume
+    CloudVolumeSnapshotOrange                         ManageIQ::Providers::Orange::CloudManager::CloudVolumeSnapshot
+    MiqEventCatcherOrange                             ManageIQ::Providers::Orange::CloudManager::EventCatcher
+    FlavorOrange                                      ManageIQ::Providers::Orange::CloudManager::Flavor
+    FloatingIpOrange                                  ManageIQ::Providers::Orange::CloudManager::FloatingIp
+    MiqEmsMetricsCollectorWorkerOrange                ManageIQ::Providers::Orange::CloudManager::MetricsCollectorWorker
+    ServiceOrchestration::OptionConverterOrange       ManageIQ::Providers::Orange::CloudManager::OrchestrationServiceOptionConverter
+    OrchestrationStackOrange                          ManageIQ::Providers::Orange::CloudManager::OrchestrationStack
+    MiqProvisionOrange                               ManageIQ::Providers::Orange::CloudManager::Provision
+    MiqProvisionOrangeWorkflow                        ManageIQ::Providers::Orange::CloudManager::ProvisionWorkflow
+    EmsRefresh::Parsers::Orange                       ManageIQ::Providers::Orange::CloudManager::RefreshParser
+    MiqEmsRefreshWorkerOrange                         ManageIQ::Providers::Orange::CloudManager::RefreshWorker
+    EmsRefresh::Refreshers::OrangeRefresher           ManageIQ::Providers::Orange::CloudManager::Refresher
+    SecurityGroupOrange                               ManageIQ::Providers::Orange::CloudManager::SecurityGroup
+    TemplateOrange                                    ManageIQ::Providers::Orange::CloudManager::Template
+    VmOrange                                          ManageIQ::Providers::Orange::CloudManager::Vm
+    VmOrange::RemoteConsole                           ManageIQ::Providers::Orange::CloudManager::Vm::RemoteConsole
+    ProviderOrange                                    ManageIQ::Providers::Orange::Provider
     )]
 
   def change

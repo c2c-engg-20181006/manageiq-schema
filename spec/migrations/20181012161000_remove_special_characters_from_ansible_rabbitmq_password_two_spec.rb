@@ -1,6 +1,6 @@
 require_migration
 
-describe RemoveSpecialCharactersFromAnsibleRabbitmqPassword do
+describe RemoveSpecialCharactersFromAnsibleRabbitmqPasswordTwo do
   let(:database_stub)       { migration_stub(:MiqDatabase) }
   let(:authentication_stub) { migration_stub(:Authentication) }
   let(:db_id)               { database_stub.first.id }
@@ -8,7 +8,7 @@ describe RemoveSpecialCharactersFromAnsibleRabbitmqPassword do
     {
       :name          => "Ansible Rabbitmq Authentication",
       :authtype      => "ansible_rabbitmq_auth",
-      :userid        => "ansible",
+      :userid        => "tower",
       :type          => "AuthUseridPassword",
       :resource_id   => db_id,
       :resource_type => "MiqDatabase"
@@ -25,7 +25,7 @@ describe RemoveSpecialCharactersFromAnsibleRabbitmqPassword do
     end
 
     it "does not change the password if the existing one doesn't contain special characters" do
-      authentication_stub.create!(auth_attributes.merge(:password => MiqPassword.encrypt("password")))
+      authentication_stub.create!(auth_attributes.merge(:password => ManageIQ::Password.encrypt("password")))
       expect(ansible_rabbitmq_password).to eq("password")
 
       migrate
@@ -34,7 +34,7 @@ describe RemoveSpecialCharactersFromAnsibleRabbitmqPassword do
     end
 
     it "generates a new password when the existing one contains special characters" do
-      authentication_stub.create!(auth_attributes.merge(:password => MiqPassword.encrypt("pass_word")))
+      authentication_stub.create!(auth_attributes.merge(:password => ManageIQ::Password.encrypt("pass_word")))
       expect(ansible_rabbitmq_password).to eq("pass_word")
 
       migrate
@@ -50,6 +50,6 @@ describe RemoveSpecialCharactersFromAnsibleRabbitmqPassword do
   def ansible_rabbitmq_password
     auths = rabbitmq_auths
     expect(auths.count).to eq(1)
-    MiqPassword.decrypt(auths.first.password)
+    ManageIQ::Password.decrypt(auths.first.password)
   end
 end

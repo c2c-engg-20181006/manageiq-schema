@@ -5,7 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 
-## Hammer-2
+## Unreleased as of Sprint 108 ending 2019-04-01
+
+### Added
+- Add zone to service templates. [(#358)](https://github.com/ManageIQ/manageiq-schema/pull/358)
+- Dialog field - set load_values_on_init to true where show_refresh_button was not enabled [(#357)](https://github.com/ManageIQ/manageiq-schema/pull/357)
+- Add state to services [(#356)](https://github.com/ManageIQ/manageiq-schema/pull/356)
+
+## Unreleased as of Sprint 107 ending 2019-03-18
+
+### Added
+- Add name validation to service templates [(#347)](https://github.com/ManageIQ/manageiq-schema/pull/347)
+
+## Unreleased as of Sprint 106 ending 2019-03-04
+
+### Added
+- Add the date of when inventory was collected [(#340)](https://github.com/ManageIQ/manageiq-schema/pull/340)
+- Use views for the metrics and metric_rollups tables [(#327)](https://github.com/ManageIQ/manageiq-schema/pull/327)
+
+## Hammer-3 - Released 2019-03-06
+
+### Fixed
+- Create a new migration to fix special characters in the rabbitmq password [(#337)](https://github.com/ManageIQ/manageiq-schema/pull/337)
+
+## Unreleased as of Sprint 105 ending 2019-02-18
+
+### Added
+- Add comments to the conversion_hosts table [(#335)](https://github.com/ManageIQ/manageiq-schema/pull/335)
+- Add missing ems_id to switch [(#232)](https://github.com/ManageIQ/manageiq-schema/pull/232)
+
+## Hammer-2 - Released 2019-02-07
 
 ### Fixed
 - Add a schema_migrations_ran [(#330)](https://github.com/ManageIQ/manageiq-schema/pull/330)
